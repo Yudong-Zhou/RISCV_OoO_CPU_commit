@@ -6,3 +6,8 @@
 //
 `timescale 1ns/1ps
 
+module moduleName (
+    ports
+);
+    
+endmodule

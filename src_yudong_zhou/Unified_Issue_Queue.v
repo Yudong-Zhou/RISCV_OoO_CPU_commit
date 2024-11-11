@@ -175,7 +175,7 @@ module Unified_Issue_Queue #(
                     break;
                 end
             end
-            if (i == RS_SIZE) stall <= 1'b1;
+            if (i == RS_SIZE) stall <= 1'b1;    // stall if RS is full
         end
     end
 
@@ -220,7 +220,7 @@ module Unified_Issue_Queue #(
                 end
             end
         end
-        if (j == RS_SIZE) stall <= 1'b1;
+        if (j == RS_SIZE) stall <= 1'b1;    // stall if no instruction can be issued
     end
 
 endmodule

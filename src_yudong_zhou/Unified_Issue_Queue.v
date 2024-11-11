@@ -51,7 +51,8 @@ module Unified_Issue_Queue #(
     output reg [31 : 0]                 rs2_value_out1,
     output reg [31 : 0]                 rs1_value_out2,
     output reg [31 : 0]                 rs2_value_out2,
-    output reg                          fu_number_out,
+    output reg [2 : 0]                  fu_number_out1,
+    output reg [2 : 0]                  fu_number_out2,
 
     output reg                          stall
 );
@@ -202,7 +203,7 @@ module Unified_Issue_Queue #(
                     rd_out1             <= dest_reg[j];
                     rs1_value_out1      <= src1_data[j];
                     rs2_value_out1      <= src2_data[j];
-                    fu_number_out       <= fu_number[j];
+                    fu_number_out1      <= fu_number[j];
                     valid[j]            <= 1'b0;
                     issue_count         <= 1;
                 end
@@ -212,7 +213,7 @@ module Unified_Issue_Queue #(
                     rd_out2             <= dest_reg[j];
                     rs1_value_out2      <= src1_data[j];
                     rs2_value_out2      <= src2_data[j];
-                    fu_number_out       <= fu_number[j];
+                    fu_number_out2      <= fu_number[j];
                     valid[j]            <= 1'b0;
                     issue_count         <= 0;
                     break;

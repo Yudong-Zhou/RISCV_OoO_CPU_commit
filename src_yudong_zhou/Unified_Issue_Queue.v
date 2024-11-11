@@ -6,7 +6,7 @@
 // Create date: 11/9/2024
 //
 // RS implementation:
-// | vaild | Opeartion | Dest Reg | Src Reg1 | Src1 Ready | Src Reg2 | Src2 Ready | imm | FU# | ROB# |
+// | valid | Opeartion | Dest Reg | Src Reg1 | Src1 Ready | Src Reg2 | Src2 Ready | imm | FU# | ROB# |
 //                                |  Data from ARF Reg1   |   Data from ARF Reg2  |
 ////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -32,6 +32,7 @@ module Unified_Issue_Queue #(
     input [31 : 0]              rs1_value_in,
     input [AR_SIZE - 1 : 0]     rs2_in,
     input [31 : 0]              rs2_value_in,
+    input [31 : 0]              imm_value_in,
     input [AR_SIZE - 1 : 0]     rd_in,
 
     // backforth logic judgement
@@ -50,9 +51,9 @@ module Unified_Issue_Queue #(
     output reg [31 : 0]                 rs2_value_out1,
     output reg [31 : 0]                 rs1_value_out2,
     output reg [31 : 0]                 rs2_value_out2,
-    output reg                          fu_number_out
+    output reg                          fu_number_out,
 
-    output reg                          stall;
+    output reg                          stall
 );
 
     /////////////////////////////////////////////////////////////////
@@ -72,7 +73,7 @@ module Unified_Issue_Queue #(
     /////////////////////////////////////////////////////////////////
 
     // operation info
-    reg                         vaild       [RS_SIZE - 1 : 0];
+    reg                         valid       [RS_SIZE - 1 : 0];
     reg [3 : 0]                 operation   [RS_SIZE - 1 : 0];
 
     // instruction info
@@ -137,7 +138,7 @@ module Unified_Issue_Queue #(
     // initializations and dispatch
     always @(posedge clk or negedge rstn) begin
         stall <= 1'b0;
-        if (!reset) begin
+        if (!rstn) begin
             for (i = 0; i < RS_SIZE; i = i + 1) begin
                 valid[i]        <= 'b0;
                 operation[i]    <= 'b0;
@@ -162,7 +163,7 @@ module Unified_Issue_Queue #(
                     src1_data[i]    <= rs1_value_in;
                     src_reg2[i]     <= rs2_in;
                     src2_data[i]    <= rs2_value_in;
-                    imm[i]          <= imm_in;
+                    imm[i]          <= imm_value_in;
                     if (op_type == LB || op_type == LW || op_type == SB || op_type == SW) begin
                         fu_number[i]    <= 2'b10;
                     end
@@ -194,26 +195,28 @@ module Unified_Issue_Queue #(
     // output signals
     always @(posedge clk or negedge rstn) begin
         for (j = 0; j < RS_SIZE; j = j + 1) begin
-            if (vaild[j] && src1_ready[j] && src2_ready[j] && rd_ready[j] && fu_ready_in[fu_number[j]]) begin
-                if (issue_count == 0)
+            if (valid[j] && src1_ready[j] && src2_ready[j] && fu_ready_in[fu_number[j]]) begin
+                if (issue_count == 0) begin
                     rs1_out1            <= src_reg1[j];
                     rs2_out1            <= src_reg2[j];
                     rd_out1             <= dest_reg[j];
                     rs1_value_out1      <= src1_data[j];
                     rs2_value_out1      <= src2_data[j];
                     fu_number_out       <= fu_number[j];
-                    vaild[j]            <= 1'b0;
+                    valid[j]            <= 1'b0;
                     issue_count         <= 1;
-                else if (issue_count == 1)
+                end
+                else if (issue_count == 1) begin
                     rs1_out2            <= src_reg1[j];
                     rs2_out2            <= src_reg2[j];
                     rd_out2             <= dest_reg[j];
                     rs1_value_out2      <= src1_data[j];
                     rs2_value_out2      <= src2_data[j];
                     fu_number_out       <= fu_number[j];
-                    vaild[j]            <= 1'b0;
+                    valid[j]            <= 1'b0;
                     issue_count         <= 0;
                     break;
+                end
             end
         end
         if (j == RS_SIZE) stall <= 1'b1;

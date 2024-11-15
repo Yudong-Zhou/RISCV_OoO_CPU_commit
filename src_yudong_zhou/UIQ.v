@@ -41,7 +41,7 @@ module Unified_Issue_Queue #(
                                 // if reg pi is ready, then rs_ready_from_ROB_in[i] = 1
 
     // forwarding logic
-    input [FU_ARRAY : 0]        fu_ready_from_FU_in,     
+    input [FU_ARRAY - 1 : 0]    fu_ready_from_FU_in,     
                                 // if FU NO.i is ready, then fu_ready_from_ROB_in[i-1] = 1
     input [AR_SIZE - 1 : 0]     reg_tag_from_FU_in,   
     input [31 : 0]              reg_value_from_FU_in,
@@ -72,7 +72,7 @@ module Unified_Issue_Queue #(
     output reg [31 : 0]                 imm_value_out3,
     output reg [FU_SIZE - 1 : 0]        fu_number_out3, 
 
-    output reg                          stall
+    output reg                          stall_out
 );
 
     /////////////////////////////////////////////////////////////////
@@ -159,7 +159,7 @@ module Unified_Issue_Queue #(
 
     // initializations and dispatch in RS
     always @(posedge clk or negedge rstn) begin
-        stall <= 1'b0;
+        stall_out <= 1'b0;
         if (~rstn) begin
             for (i = 0; i < RS_SIZE; i = i + 1) begin
                 valid[i]        <= 'b0;
@@ -173,38 +173,66 @@ module Unified_Issue_Queue #(
                 src2_ready[i]   <= 'b0;
                 imm[i]          <= 'b0;
                 fu_number[i]    <= 'b0;
+                // initialize all output signals
+                rs1_out1        <= 'b0;
+                rs2_out1        <= 'b0;
+                rd_out1         <= 'b0;
+                rs1_value_out1  <= 'b0;
+                rs2_value_out1  <= 'b0;
+                imm_value_out1  <= 'b0;
+                fu_number_out1  <= 'b0;
+                rs1_out2        <= 'b0;
+                rs2_out2        <= 'b0;
+                rd_out2         <= 'b0;
+                rs1_value_out2  <= 'b0;
+                rs2_value_out2  <= 'b0;
+                imm_value_out2  <= 'b0;
+                fu_number_out2  <= 'b0;
+                rs1_out3        <= 'b0;
+                rs2_out3        <= 'b0;
+                rd_out3         <= 'b0;
+                rs1_value_out3  <= 'b0;
+                rs2_value_out3  <= 'b0;
+                imm_value_out3  <= 'b0;
+                fu_number_out3  <= 'b0;
+                stall_out       <= 'b0;
             end
         end
-        else begin
-            for (i = 0; i < RS_SIZE; i = i + 1) begin
+        else begin: loop_data_into_RS
+            for (i = 0; i < RS_SIZE; i = i + 1) begin 
                 if (~valid[i]) begin
                     valid[i]        <= 1'b1;
                     operation[i]    <= op_type;
                     dest_reg[i]     <= rd_in;
+
                     // put src1 data into RS
                     src_reg1[i]     <= rs1_in;
                     if(rs1_ready_from_ROB_in[rs1_in]) begin
                         src1_ready[i]   <= 1'b1;
                         src1_data[i]    <= rs1_value_in;
                     end
+
                     // put src2 data into RS
                     src_reg2[i]     <= rs2_in;
                     if(rs2_ready_from_ROB_in) begin
                         src2_ready[i]   <= 1'b1;
                         src2_data[i]    <= rs2_value_in;
                     end
+
                     // put imm into RS
                     imm[i]          <= imm_value_in;
+
                     // round robin
                     fu_number[i]    <= fu_alu_round;
                     fu_alu_round    <= fu_alu_round + 1;
                     if (fu_alu_round == 2'd3)   fu_alu_round <= 2'd0;
+
                     // if already dispatched an instruction, break
-                    break;
+                   disable loop_data_into_RS; 
                 end
             end
         end
-        if (i == RS_SIZE) stall <= 1'b1;    // stall if RS is full
+        if (i == RS_SIZE) stall_out <= 1'b1;    // stall if RS is full
     end
     
     // update source_ready & source_data signals
@@ -233,7 +261,8 @@ module Unified_Issue_Queue #(
         issue_count <= 0;
         // issue_stall_flag reset
         issue_stall_flag <= 1;
-
+        
+        begin: loop_data_output
         for (j = 0; j < RS_SIZE; j = j + 1) begin
             if (valid[j] && src1_ready[j] && src2_ready[j] && fu_ready_from_FU_in[fu_number[j]]
                 && (~fu_taken[fu_number[j]])) begin
@@ -289,12 +318,13 @@ module Unified_Issue_Queue #(
                     // no need to stall
                     issue_stall_flag        <= 0;
                     // if already issued 3 instructions, break
-                    break;
+                    disable loop_data_output;
                 end
             end
         end
+        end
         // stall if no instruction can be issued
-        if (issue_stall_flag) stall <= 1'b1;
+        if (issue_stall_flag) stall_out <= 1'b1;
     end
 
 endmodule

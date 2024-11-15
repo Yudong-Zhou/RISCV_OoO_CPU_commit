@@ -14,9 +14,9 @@ module Decoder (
     output reg  [6:0]       opcode,
     output reg  [2:0]       funct3,
     output reg  [6:0]       funct7,
-    output reg  [4:0]       rs1,
-    output reg  [4:0]       rs2,
-    output reg  [4:0]       rd,
+    output reg  [6:0]       rs1,
+    output reg  [6:0]       rs2,
+    output reg  [6:0]       rd,
     output reg  [31:0]      imm
 );
 

@@ -8,24 +8,64 @@ z2
 !i10f 100
 cModel Technology
 dE:/UCLA/Codes/zyd_github/RISCV_5pipeline_CPU/sim/CPU_top
-vUnified_Issue_Queue
-!s110 1731289254
+vDecoder
+!s110 1731653660
 !i10b 1
-!s100 XlKNMzJV`M5iS02CD;`8C1
-IhFX;YBZ=;PL0AUBz@Ro8W0
-VDg1SIo80bB@j0V0VzS_@n1
-dE:/UCLA/Codes/zyd_github/189_OoOcpu_commit/sim_yudong_zhou
-w1731289251
-8E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/Unified_Issue_Queue.v
-FE:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/Unified_Issue_Queue.v
-L0 15
-OL;L;10.4;61
+!s100 LMQb4?Hdk33k:@YoP]`Z31
+ISGGUDWK==W14Wi9=``hi>0
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+Z1 dE:/UCLA/Codes/zyd_github/189_OoOcpu_commit/sim_yudong_zhou
+w1731650495
+8E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/Decoder.v
+FE:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/Decoder.v
+Z2 L0 12
+Z3 OL;L;10.4;61
 r1
 !s85 0
 31
-!s108 1731289254.560000
-!s107 E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/Unified_Issue_Queue.v|
-!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/Unified_Issue_Queue.v|
+!s108 1731653660.787000
+!s107 E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/Decoder.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/Decoder.v|
 !i113 0
-o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z4 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+n@decoder
+vUIQ_testbench
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 cfRK@gISIXdK2ngL4ehWR3
+InXbdkgH2I2hk[<NfOB<QS3
+R1
+w1731653127
+8E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v
+FE:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v
+R2
+R3
+!s108 1731653660.603000
+!s107 E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v|
+!i113 0
+R4
+n@u@i@q_testbench
+vUnified_Issue_Queue
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 jj>a1ESi;ToTW4WLV81[;0
+ILFK4_3I9V[>>;797T;W;61
+R1
+w1731653497
+8E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ.v
+FE:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ.v
+L0 15
+R3
+!s108 1731653661.133000
+!s107 E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ.v|
+!i113 0
+R4
 n@unified_@issue_@queue

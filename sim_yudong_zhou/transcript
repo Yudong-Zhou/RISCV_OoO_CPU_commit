@@ -1,0 +1,690 @@
+# Reading D:/SOFTWARE/Modelsim/tcl/vsim/pref.tcl
+# //  ModelSim SE-64 10.4 Dec  3 2014 
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# OpenFile E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/sim_yudong_zhou/test_UIQ.mpf
+# Loading project test_UIQ
+# Compile of UIQ_tb.v was successful.
+# Compile of Decoder.v was successful.
+# Compile of UIQ.v was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -novopt work.UIQ_testbench
+# vsim -gui E:\UCLA\Codes\zyd_github\189_OoOcpu_commit\sim_yudong_zhou\test_UIQ.mpf 
+# Start time: 21:58:51 on Nov 14,2024
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/sim_yudong_zhou/work.UIQ_testbench
+# Loading work.UIQ_testbench
+# Refreshing E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/sim_yudong_zhou/work.Decoder
+# Loading work.Decoder
+# Refreshing E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/sim_yudong_zhou/work.Unified_Issue_Queue
+# Loading work.Unified_Issue_Queue
+# ** Error (suppressible): (vsim-3053) E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v(76): Illegal output or inout port connection for port 'opcode'.
+#    Time: 0 ps  Iteration: 0  Instance: /UIQ_testbench/decoder_inst File: E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/Decoder.v
+# ** Error (suppressible): (vsim-3053) E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v(76): Illegal output or inout port connection for port 'funct3'.
+#    Time: 0 ps  Iteration: 0  Instance: /UIQ_testbench/decoder_inst File: E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/Decoder.v
+# ** Error (suppressible): (vsim-3053) E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v(76): Illegal output or inout port connection for port 'funct7'.
+#    Time: 0 ps  Iteration: 0  Instance: /UIQ_testbench/decoder_inst File: E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/Decoder.v
+# ** Error (suppressible): (vsim-3053) E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v(76): Illegal output or inout port connection for port 'rs1'.
+#    Time: 0 ps  Iteration: 0  Instance: /UIQ_testbench/decoder_inst File: E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/Decoder.v
+# ** Warning: (vsim-3015) E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v(76): [PCDPC] - Port size (5) does not match connection size (7) for port 'rs1'. The port definition is at: E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/Decoder.v(17).
+#    Time: 0 ps  Iteration: 0  Instance: /UIQ_testbench/decoder_inst File: E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/Decoder.v
+# ** Error (suppressible): (vsim-3053) E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v(76): Illegal output or inout port connection for port 'rs2'.
+#    Time: 0 ps  Iteration: 0  Instance: /UIQ_testbench/decoder_inst File: E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/Decoder.v
+# ** Warning: (vsim-3015) E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v(76): [PCDPC] - Port size (5) does not match connection size (7) for port 'rs2'. The port definition is at: E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/Decoder.v(18).
+#    Time: 0 ps  Iteration: 0  Instance: /UIQ_testbench/decoder_inst File: E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/Decoder.v
+# ** Error (suppressible): (vsim-3053) E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v(76): Illegal output or inout port connection for port 'rd'.
+#    Time: 0 ps  Iteration: 0  Instance: /UIQ_testbench/decoder_inst File: E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/Decoder.v
+# ** Warning: (vsim-3015) E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v(76): [PCDPC] - Port size (5) does not match connection size (7) for port 'rd'. The port definition is at: E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/Decoder.v(19).
+#    Time: 0 ps  Iteration: 0  Instance: /UIQ_testbench/decoder_inst File: E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/Decoder.v
+# ** Error (suppressible): (vsim-3053) E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v(76): Illegal output or inout port connection for port 'imm'.
+#    Time: 0 ps  Iteration: 0  Instance: /UIQ_testbench/decoder_inst File: E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/Decoder.v
+# ** Error: (vsim-3063) E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v(88): Port 'opcode' not found in the connected module (3rd connection).
+#    Time: 0 ps  Iteration: 0  Instance: /UIQ_testbench/UIQ_inst File: E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ.v
+# ** Error: (vsim-3063) E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v(88): Port 'funct3' not found in the connected module (4th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /UIQ_testbench/UIQ_inst File: E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ.v
+# ** Error: (vsim-3063) E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v(88): Port 'funct7' not found in the connected module (5th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /UIQ_testbench/UIQ_inst File: E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ.v
+# ** Error: (vsim-3063) E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v(88): Port 'rs1' not found in the connected module (6th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /UIQ_testbench/UIQ_inst File: E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ.v
+# ** Error: (vsim-3063) E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v(88): Port 'rs1_value' not found in the connected module (7th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /UIQ_testbench/UIQ_inst File: E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ.v
+# ** Error: (vsim-3063) E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v(88): Port 'rs2' not found in the connected module (8th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /UIQ_testbench/UIQ_inst File: E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ.v
+# ** Error: (vsim-3063) E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v(88): Port 'rs2_value' not found in the connected module (9th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /UIQ_testbench/UIQ_inst File: E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ.v
+# ** Error: (vsim-3063) E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v(88): Port 'imm_value' not found in the connected module (10th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /UIQ_testbench/UIQ_inst File: E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ.v
+# ** Error: (vsim-3063) E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v(88): Port 'rd' not found in the connected module (11th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /UIQ_testbench/UIQ_inst File: E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ.v
+# ** Error: (vsim-3063) E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v(88): Port 'rs1_ready_from_ROB' not found in the connected module (12th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /UIQ_testbench/UIQ_inst File: E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ.v
+# ** Error: (vsim-3063) E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v(88): Port 'rs2_ready_from_ROB' not found in the connected module (13th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /UIQ_testbench/UIQ_inst File: E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ.v
+# ** Error: (vsim-3063) E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v(88): Port 'fu_ready_from_FU' not found in the connected module (14th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /UIQ_testbench/UIQ_inst File: E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ.v
+# ** Error: (vsim-3063) E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v(88): Port 'reg_tag_from_FU' not found in the connected module (15th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /UIQ_testbench/UIQ_inst File: E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ.v
+# ** Error: (vsim-3063) E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v(88): Port 'reg_value_from_FU' not found in the connected module (16th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /UIQ_testbench/UIQ_inst File: E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ.v
+# ** Error: (vsim-3043) E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ.v(203): Unresolved reference to 'break'.
+#    Time: 0 ps  Iteration: 0  Instance: /UIQ_testbench/UIQ_inst File: E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ.v
+# Error loading design
+# Compile of UIQ_tb.v was successful.
+# Compile of Decoder.v was successful.
+# Compile of UIQ.v was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -novopt work.UIQ_testbench
+# vsim 
+# Start time: 22:00:39 on Nov 14,2024
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/sim_yudong_zhou/work.UIQ_testbench
+# Loading work.UIQ_testbench
+# Refreshing E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/sim_yudong_zhou/work.Decoder
+# Loading work.Decoder
+# Refreshing E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/sim_yudong_zhou/work.Unified_Issue_Queue
+# Loading work.Unified_Issue_Queue
+# ** Error (suppressible): (vsim-3053) E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v(76): Illegal output or inout port connection for port 'opcode'.
+#    Time: 0 ps  Iteration: 0  Instance: /UIQ_testbench/decoder_inst File: E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/Decoder.v
+# ** Error (suppressible): (vsim-3053) E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v(76): Illegal output or inout port connection for port 'funct3'.
+#    Time: 0 ps  Iteration: 0  Instance: /UIQ_testbench/decoder_inst File: E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/Decoder.v
+# ** Error (suppressible): (vsim-3053) E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v(76): Illegal output or inout port connection for port 'funct7'.
+#    Time: 0 ps  Iteration: 0  Instance: /UIQ_testbench/decoder_inst File: E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/Decoder.v
+# ** Error (suppressible): (vsim-3053) E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v(76): Illegal output or inout port connection for port 'rs1'.
+#    Time: 0 ps  Iteration: 0  Instance: /UIQ_testbench/decoder_inst File: E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/Decoder.v
+# ** Warning: (vsim-3015) E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v(76): [PCDPC] - Port size (5) does not match connection size (7) for port 'rs1'. The port definition is at: E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/Decoder.v(17).
+#    Time: 0 ps  Iteration: 0  Instance: /UIQ_testbench/decoder_inst File: E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/Decoder.v
+# ** Error (suppressible): (vsim-3053) E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v(76): Illegal output or inout port connection for port 'rs2'.
+#    Time: 0 ps  Iteration: 0  Instance: /UIQ_testbench/decoder_inst File: E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/Decoder.v
+# ** Warning: (vsim-3015) E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v(76): [PCDPC] - Port size (5) does not match connection size (7) for port 'rs2'. The port definition is at: E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/Decoder.v(18).
+#    Time: 0 ps  Iteration: 0  Instance: /UIQ_testbench/decoder_inst File: E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/Decoder.v
+# ** Error (suppressible): (vsim-3053) E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v(76): Illegal output or inout port connection for port 'rd'.
+#    Time: 0 ps  Iteration: 0  Instance: /UIQ_testbench/decoder_inst File: E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/Decoder.v
+# ** Warning: (vsim-3015) E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v(76): [PCDPC] - Port size (5) does not match connection size (7) for port 'rd'. The port definition is at: E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/Decoder.v(19).
+#    Time: 0 ps  Iteration: 0  Instance: /UIQ_testbench/decoder_inst File: E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/Decoder.v
+# ** Error (suppressible): (vsim-3053) E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v(76): Illegal output or inout port connection for port 'imm'.
+#    Time: 0 ps  Iteration: 0  Instance: /UIQ_testbench/decoder_inst File: E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/Decoder.v
+# ** Error: (vsim-3063) E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v(88): Port 'stall' not found in the connected module (38th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /UIQ_testbench/UIQ_inst File: E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ.v
+# ** Error: (vsim-3043) E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ.v(203): Unresolved reference to 'break'.
+#    Time: 0 ps  Iteration: 0  Instance: /UIQ_testbench/UIQ_inst File: E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ.v
+# Error loading design
+# Compile of UIQ_tb.v was successful.
+# Compile of Decoder.v was successful.
+# Compile of UIQ.v was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -novopt work.UIQ_testbench
+# vsim 
+# Start time: 22:04:32 on Nov 14,2024
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/sim_yudong_zhou/work.UIQ_testbench
+# Loading work.UIQ_testbench
+# Refreshing E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/sim_yudong_zhou/work.Decoder
+# Loading work.Decoder
+# Refreshing E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/sim_yudong_zhou/work.Unified_Issue_Queue
+# Loading work.Unified_Issue_Queue
+# ** Error (suppressible): (vsim-3053) E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v(76): Illegal output or inout port connection for port 'opcode'.
+#    Time: 0 ps  Iteration: 0  Instance: /UIQ_testbench/decoder_inst File: E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/Decoder.v
+# ** Error (suppressible): (vsim-3053) E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v(76): Illegal output or inout port connection for port 'funct3'.
+#    Time: 0 ps  Iteration: 0  Instance: /UIQ_testbench/decoder_inst File: E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/Decoder.v
+# ** Error (suppressible): (vsim-3053) E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v(76): Illegal output or inout port connection for port 'funct7'.
+#    Time: 0 ps  Iteration: 0  Instance: /UIQ_testbench/decoder_inst File: E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/Decoder.v
+# ** Error (suppressible): (vsim-3053) E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v(76): Illegal output or inout port connection for port 'rs1'.
+#    Time: 0 ps  Iteration: 0  Instance: /UIQ_testbench/decoder_inst File: E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/Decoder.v
+# ** Error (suppressible): (vsim-3053) E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v(76): Illegal output or inout port connection for port 'rs2'.
+#    Time: 0 ps  Iteration: 0  Instance: /UIQ_testbench/decoder_inst File: E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/Decoder.v
+# ** Error (suppressible): (vsim-3053) E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v(76): Illegal output or inout port connection for port 'rd'.
+#    Time: 0 ps  Iteration: 0  Instance: /UIQ_testbench/decoder_inst File: E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/Decoder.v
+# ** Error (suppressible): (vsim-3053) E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v(76): Illegal output or inout port connection for port 'imm'.
+#    Time: 0 ps  Iteration: 0  Instance: /UIQ_testbench/decoder_inst File: E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/Decoder.v
+# ** Error: (vsim-3043) E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ.v(208): Unresolved reference to 'break'.
+#    Time: 0 ps  Iteration: 0  Instance: /UIQ_testbench/UIQ_inst File: E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ.v
+# Error loading design
+# Compile of UIQ_tb.v was successful.
+# Compile of Decoder.v was successful.
+# Compile of UIQ.v was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -novopt work.UIQ_testbench
+# vsim 
+# Start time: 22:08:05 on Nov 14,2024
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/sim_yudong_zhou/work.UIQ_testbench
+# Loading work.UIQ_testbench
+# Refreshing E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/sim_yudong_zhou/work.Unified_Issue_Queue
+# Loading work.Unified_Issue_Queue
+# ** Error: (vsim-3043) E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ.v(208): Unresolved reference to 'break'.
+#    Time: 0 ps  Iteration: 0  Instance: /UIQ_testbench/UIQ_inst File: E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ.v
+# Error loading design
+# Compile of UIQ_tb.v was successful.
+# Compile of Decoder.v was successful.
+# Compile of UIQ.v was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -novopt work.UIQ_testbench
+# vsim 
+# Start time: 22:12:11 on Nov 14,2024
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/sim_yudong_zhou/work.UIQ_testbench
+# Loading work.UIQ_testbench
+# Refreshing E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/sim_yudong_zhou/work.Unified_Issue_Queue
+# Loading work.Unified_Issue_Queue
+add wave -position end  sim:/UIQ_testbench/ResetValue
+add wave -position end  sim:/UIQ_testbench/HalfCycle
+add wave -position end  sim:/UIQ_testbench/Cycle
+add wave -position end  sim:/UIQ_testbench/RS_SIZE
+add wave -position end  sim:/UIQ_testbench/AR_SIZE
+add wave -position end  sim:/UIQ_testbench/AR_ARRAY
+add wave -position end  sim:/UIQ_testbench/FU_SIZE
+add wave -position end  sim:/UIQ_testbench/FU_ARRAY
+add wave -position end  sim:/UIQ_testbench/clk
+add wave -position end  sim:/UIQ_testbench/rstn
+add wave -position end  sim:/UIQ_testbench/opcode_in
+add wave -position end  sim:/UIQ_testbench/funct3_in
+add wave -position end  sim:/UIQ_testbench/funct7_in
+add wave -position end  sim:/UIQ_testbench/rs1_in
+add wave -position end  sim:/UIQ_testbench/rs1_value_in
+add wave -position end  sim:/UIQ_testbench/rs2_in
+add wave -position end  sim:/UIQ_testbench/rs2_value_in
+add wave -position end  sim:/UIQ_testbench/imm_value_in
+add wave -position end  sim:/UIQ_testbench/rd_in
+add wave -position end  sim:/UIQ_testbench/rs1_ready_from_ROB_in
+add wave -position end  sim:/UIQ_testbench/rs2_ready_from_ROB_in
+add wave -position end  sim:/UIQ_testbench/fu_ready_from_FU_in
+add wave -position end  sim:/UIQ_testbench/reg_tag_from_FU_in
+add wave -position end  sim:/UIQ_testbench/reg_value_from_FU_in
+add wave -position end  sim:/UIQ_testbench/rs1_out1
+add wave -position end  sim:/UIQ_testbench/rs2_out1
+add wave -position end  sim:/UIQ_testbench/rd_out1
+add wave -position end  sim:/UIQ_testbench/rs1_value_out1
+add wave -position end  sim:/UIQ_testbench/rs2_value_out1
+add wave -position end  sim:/UIQ_testbench/imm_value_out1
+add wave -position end  sim:/UIQ_testbench/fu_number_out1
+add wave -position end  sim:/UIQ_testbench/rs1_out2
+add wave -position end  sim:/UIQ_testbench/rs2_out2
+add wave -position end  sim:/UIQ_testbench/rd_out2
+add wave -position end  sim:/UIQ_testbench/rs1_value_out2
+add wave -position end  sim:/UIQ_testbench/rs2_value_out2
+add wave -position end  sim:/UIQ_testbench/imm_value_out2
+add wave -position end  sim:/UIQ_testbench/fu_number_out2
+add wave -position end  sim:/UIQ_testbench/rs1_out3
+add wave -position end  sim:/UIQ_testbench/rs2_out3
+add wave -position end  sim:/UIQ_testbench/rd_out3
+add wave -position end  sim:/UIQ_testbench/rs1_value_out3
+add wave -position end  sim:/UIQ_testbench/rs2_value_out3
+add wave -position end  sim:/UIQ_testbench/imm_value_out3
+add wave -position end  sim:/UIQ_testbench/fu_number_out3
+add wave -position end  sim:/UIQ_testbench/stall_out
+add wave -position end  sim:/UIQ_testbench/instruction
+quit -sim
+# Compile of UIQ_tb.v was successful.
+# Compile of Decoder.v was successful.
+# Compile of UIQ.v was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -novopt work.UIQ_testbench
+# vsim 
+# Start time: 22:13:34 on Nov 14,2024
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/sim_yudong_zhou/work.UIQ_testbench
+# Loading work.UIQ_testbench
+# Refreshing E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/sim_yudong_zhou/work.Unified_Issue_Queue
+# Loading work.Unified_Issue_Queue
+add wave -position end  sim:/UIQ_testbench/ResetValue
+add wave -position end  sim:/UIQ_testbench/HalfCycle
+add wave -position end  sim:/UIQ_testbench/Cycle
+add wave -position end  sim:/UIQ_testbench/RS_SIZE
+add wave -position end  sim:/UIQ_testbench/AR_SIZE
+add wave -position end  sim:/UIQ_testbench/AR_ARRAY
+add wave -position end  sim:/UIQ_testbench/FU_SIZE
+add wave -position end  sim:/UIQ_testbench/FU_ARRAY
+add wave -position end  sim:/UIQ_testbench/clk
+add wave -position end  sim:/UIQ_testbench/rstn
+add wave -position end  sim:/UIQ_testbench/opcode_in
+add wave -position end  sim:/UIQ_testbench/funct3_in
+add wave -position end  sim:/UIQ_testbench/funct7_in
+add wave -position end  sim:/UIQ_testbench/rs1_in
+add wave -position end  sim:/UIQ_testbench/rs1_value_in
+add wave -position end  sim:/UIQ_testbench/rs2_in
+add wave -position end  sim:/UIQ_testbench/rs2_value_in
+add wave -position end  sim:/UIQ_testbench/imm_value_in
+add wave -position end  sim:/UIQ_testbench/rd_in
+add wave -position end  sim:/UIQ_testbench/rs1_ready_from_ROB_in
+add wave -position end  sim:/UIQ_testbench/rs2_ready_from_ROB_in
+add wave -position end  sim:/UIQ_testbench/fu_ready_from_FU_in
+add wave -position end  sim:/UIQ_testbench/reg_tag_from_FU_in
+add wave -position end  sim:/UIQ_testbench/reg_value_from_FU_in
+add wave -position end  sim:/UIQ_testbench/rs1_out1
+add wave -position end  sim:/UIQ_testbench/rs2_out1
+add wave -position end  sim:/UIQ_testbench/rd_out1
+add wave -position end  sim:/UIQ_testbench/rs1_value_out1
+add wave -position end  sim:/UIQ_testbench/rs2_value_out1
+add wave -position end  sim:/UIQ_testbench/imm_value_out1
+add wave -position end  sim:/UIQ_testbench/fu_number_out1
+add wave -position end  sim:/UIQ_testbench/rs1_out2
+add wave -position end  sim:/UIQ_testbench/rs2_out2
+add wave -position end  sim:/UIQ_testbench/rd_out2
+add wave -position end  sim:/UIQ_testbench/rs1_value_out2
+add wave -position end  sim:/UIQ_testbench/rs2_value_out2
+add wave -position end  sim:/UIQ_testbench/imm_value_out2
+add wave -position end  sim:/UIQ_testbench/fu_number_out2
+add wave -position end  sim:/UIQ_testbench/rs1_out3
+add wave -position end  sim:/UIQ_testbench/rs2_out3
+add wave -position end  sim:/UIQ_testbench/rd_out3
+add wave -position end  sim:/UIQ_testbench/rs1_value_out3
+add wave -position end  sim:/UIQ_testbench/rs2_value_out3
+add wave -position end  sim:/UIQ_testbench/imm_value_out3
+add wave -position end  sim:/UIQ_testbench/fu_number_out3
+add wave -position end  sim:/UIQ_testbench/stall_out
+add wave -position end  sim:/UIQ_testbench/instruction
+run -all
+# ** Note: $finish    : E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v(168)
+#    Time: 20 ns  Iteration: 0  Instance: /UIQ_testbench
+# 1
+# Break in Module UIQ_testbench at E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v line 168
+quit -sim
+# Compile of UIQ_tb.v was successful.
+# Compile of Decoder.v was successful.
+# Compile of UIQ.v was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -novopt work.UIQ_testbench
+# vsim 
+# Start time: 22:15:04 on Nov 14,2024
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/sim_yudong_zhou/work.UIQ_testbench
+# Loading work.UIQ_testbench
+# Refreshing E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/sim_yudong_zhou/work.Unified_Issue_Queue
+# Loading work.Unified_Issue_Queue
+add wave -position end  sim:/UIQ_testbench/ResetValue
+add wave -position end  sim:/UIQ_testbench/HalfCycle
+add wave -position end  sim:/UIQ_testbench/Cycle
+add wave -position end  sim:/UIQ_testbench/RS_SIZE
+add wave -position end  sim:/UIQ_testbench/AR_SIZE
+add wave -position end  sim:/UIQ_testbench/AR_ARRAY
+add wave -position end  sim:/UIQ_testbench/FU_SIZE
+add wave -position end  sim:/UIQ_testbench/FU_ARRAY
+add wave -position end  sim:/UIQ_testbench/clk
+add wave -position end  sim:/UIQ_testbench/rstn
+add wave -position end  sim:/UIQ_testbench/opcode_in
+add wave -position end  sim:/UIQ_testbench/funct3_in
+add wave -position end  sim:/UIQ_testbench/funct7_in
+add wave -position end  sim:/UIQ_testbench/rs1_in
+add wave -position end  sim:/UIQ_testbench/rs1_value_in
+add wave -position end  sim:/UIQ_testbench/rs2_in
+add wave -position end  sim:/UIQ_testbench/rs2_value_in
+add wave -position end  sim:/UIQ_testbench/imm_value_in
+add wave -position end  sim:/UIQ_testbench/rd_in
+add wave -position end  sim:/UIQ_testbench/rs1_ready_from_ROB_in
+add wave -position end  sim:/UIQ_testbench/rs2_ready_from_ROB_in
+add wave -position end  sim:/UIQ_testbench/fu_ready_from_FU_in
+add wave -position end  sim:/UIQ_testbench/reg_tag_from_FU_in
+add wave -position end  sim:/UIQ_testbench/reg_value_from_FU_in
+add wave -position end  sim:/UIQ_testbench/rs1_out1
+add wave -position end  sim:/UIQ_testbench/rs2_out1
+add wave -position end  sim:/UIQ_testbench/rd_out1
+add wave -position end  sim:/UIQ_testbench/rs1_value_out1
+add wave -position end  sim:/UIQ_testbench/rs2_value_out1
+add wave -position end  sim:/UIQ_testbench/imm_value_out1
+add wave -position end  sim:/UIQ_testbench/fu_number_out1
+add wave -position end  sim:/UIQ_testbench/rs1_out2
+add wave -position end  sim:/UIQ_testbench/rs2_out2
+add wave -position end  sim:/UIQ_testbench/rd_out2
+add wave -position end  sim:/UIQ_testbench/rs1_value_out2
+add wave -position end  sim:/UIQ_testbench/rs2_value_out2
+add wave -position end  sim:/UIQ_testbench/imm_value_out2
+add wave -position end  sim:/UIQ_testbench/fu_number_out2
+add wave -position end  sim:/UIQ_testbench/rs1_out3
+add wave -position end  sim:/UIQ_testbench/rs2_out3
+add wave -position end  sim:/UIQ_testbench/rd_out3
+add wave -position end  sim:/UIQ_testbench/rs1_value_out3
+add wave -position end  sim:/UIQ_testbench/rs2_value_out3
+add wave -position end  sim:/UIQ_testbench/imm_value_out3
+add wave -position end  sim:/UIQ_testbench/fu_number_out3
+add wave -position end  sim:/UIQ_testbench/stall_out
+add wave -position end  sim:/UIQ_testbench/instruction
+run -all
+# ** Note: $stop    : E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v(168)
+#    Time: 20 ns  Iteration: 0  Instance: /UIQ_testbench
+# Break in Module UIQ_testbench at E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v line 168
+quit -sim
+# Compile of UIQ_tb.v was successful.
+vsim -novopt work.UIQ_testbench
+# vsim 
+# Start time: 22:20:30 on Nov 14,2024
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/sim_yudong_zhou/work.UIQ_testbench
+# Loading work.UIQ_testbench
+# Loading work.Unified_Issue_Queue
+add wave -position end  sim:/UIQ_testbench/ResetValue
+add wave -position end  sim:/UIQ_testbench/HalfCycle
+add wave -position end  sim:/UIQ_testbench/Cycle
+add wave -position end  sim:/UIQ_testbench/RS_SIZE
+add wave -position end  sim:/UIQ_testbench/AR_SIZE
+add wave -position end  sim:/UIQ_testbench/AR_ARRAY
+add wave -position end  sim:/UIQ_testbench/FU_SIZE
+add wave -position end  sim:/UIQ_testbench/FU_ARRAY
+add wave -position end  sim:/UIQ_testbench/clk
+add wave -position end  sim:/UIQ_testbench/rstn
+add wave -position end  sim:/UIQ_testbench/opcode_in
+add wave -position end  sim:/UIQ_testbench/funct3_in
+add wave -position end  sim:/UIQ_testbench/funct7_in
+add wave -position end  sim:/UIQ_testbench/rs1_in
+add wave -position end  sim:/UIQ_testbench/rs1_value_in
+add wave -position end  sim:/UIQ_testbench/rs2_in
+add wave -position end  sim:/UIQ_testbench/rs2_value_in
+add wave -position end  sim:/UIQ_testbench/imm_value_in
+add wave -position end  sim:/UIQ_testbench/rd_in
+add wave -position end  sim:/UIQ_testbench/rs1_ready_from_ROB_in
+add wave -position end  sim:/UIQ_testbench/rs2_ready_from_ROB_in
+add wave -position end  sim:/UIQ_testbench/fu_ready_from_FU_in
+add wave -position end  sim:/UIQ_testbench/reg_tag_from_FU_in
+add wave -position end  sim:/UIQ_testbench/reg_value_from_FU_in
+add wave -position end  sim:/UIQ_testbench/rs1_out1
+add wave -position end  sim:/UIQ_testbench/rs2_out1
+add wave -position end  sim:/UIQ_testbench/rd_out1
+add wave -position end  sim:/UIQ_testbench/rs1_value_out1
+add wave -position end  sim:/UIQ_testbench/rs2_value_out1
+add wave -position end  sim:/UIQ_testbench/imm_value_out1
+add wave -position end  sim:/UIQ_testbench/fu_number_out1
+add wave -position end  sim:/UIQ_testbench/rs1_out2
+add wave -position end  sim:/UIQ_testbench/rs2_out2
+add wave -position end  sim:/UIQ_testbench/rd_out2
+add wave -position end  sim:/UIQ_testbench/rs1_value_out2
+add wave -position end  sim:/UIQ_testbench/rs2_value_out2
+add wave -position end  sim:/UIQ_testbench/imm_value_out2
+add wave -position end  sim:/UIQ_testbench/fu_number_out2
+add wave -position end  sim:/UIQ_testbench/rs1_out3
+add wave -position end  sim:/UIQ_testbench/rs2_out3
+add wave -position end  sim:/UIQ_testbench/rd_out3
+add wave -position end  sim:/UIQ_testbench/rs1_value_out3
+add wave -position end  sim:/UIQ_testbench/rs2_value_out3
+add wave -position end  sim:/UIQ_testbench/imm_value_out3
+add wave -position end  sim:/UIQ_testbench/fu_number_out3
+add wave -position end  sim:/UIQ_testbench/stall_out
+add wave -position end  sim:/UIQ_testbench/instruction
+run -all
+# ** Note: $stop    : E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v(169)
+#    Time: 50 ns  Iteration: 0  Instance: /UIQ_testbench
+# Break in Module UIQ_testbench at E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v line 169
+add wave -position end  sim:/UIQ_testbench/UIQ_inst/valid
+add wave -position end  sim:/UIQ_testbench/UIQ_inst/operation
+add wave -position end  sim:/UIQ_testbench/UIQ_inst/dest_reg
+add wave -position end  sim:/UIQ_testbench/UIQ_inst/src_reg1
+add wave -position end  sim:/UIQ_testbench/UIQ_inst/src1_data
+add wave -position end  sim:/UIQ_testbench/UIQ_inst/src1_ready
+add wave -position end  sim:/UIQ_testbench/UIQ_inst/src_reg2
+add wave -position end  sim:/UIQ_testbench/UIQ_inst/src2_data
+add wave -position end  sim:/UIQ_testbench/UIQ_inst/src2_ready
+add wave -position end  sim:/UIQ_testbench/UIQ_inst/imm
+add wave -position end  sim:/UIQ_testbench/UIQ_inst/fu_number
+restart -f
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+run -all
+# ** Note: $stop    : E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v(169)
+#    Time: 50 ns  Iteration: 0  Instance: /UIQ_testbench
+# Break in Module UIQ_testbench at E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v line 169
+quit -sim
+# Compile of UIQ_tb.v was successful.
+# Compile of UIQ.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -novopt work.UIQ_testbench
+# vsim 
+# Start time: 22:27:41 on Nov 14,2024
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/sim_yudong_zhou/work.UIQ_testbench
+# Loading work.UIQ_testbench
+# Refreshing E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/sim_yudong_zhou/work.Unified_Issue_Queue
+# Loading work.Unified_Issue_Queue
+add wave -position end  sim:/UIQ_testbench/AR_ARRAY
+add wave -position end  sim:/UIQ_testbench/ResetValue
+add wave -position end  sim:/UIQ_testbench/HalfCycle
+add wave -position end  sim:/UIQ_testbench/Cycle
+add wave -position end  sim:/UIQ_testbench/RS_SIZE
+add wave -position end  sim:/UIQ_testbench/AR_SIZE
+add wave -position end  sim:/UIQ_testbench/AR_ARRAY
+add wave -position end  sim:/UIQ_testbench/FU_SIZE
+add wave -position end  sim:/UIQ_testbench/FU_ARRAY
+add wave -position end  sim:/UIQ_testbench/clk
+add wave -position end  sim:/UIQ_testbench/rstn
+add wave -position end  sim:/UIQ_testbench/opcode_in
+add wave -position end  sim:/UIQ_testbench/funct3_in
+add wave -position end  sim:/UIQ_testbench/funct7_in
+add wave -position end  sim:/UIQ_testbench/rs1_in
+add wave -position end  sim:/UIQ_testbench/rs1_value_in
+add wave -position end  sim:/UIQ_testbench/rs2_in
+add wave -position end  sim:/UIQ_testbench/rs2_value_in
+add wave -position end  sim:/UIQ_testbench/imm_value_in
+add wave -position end  sim:/UIQ_testbench/rd_in
+add wave -position end  sim:/UIQ_testbench/rs1_ready_from_ROB_in
+add wave -position end  sim:/UIQ_testbench/rs2_ready_from_ROB_in
+add wave -position end  sim:/UIQ_testbench/fu_ready_from_FU_in
+add wave -position end  sim:/UIQ_testbench/reg_tag_from_FU_in
+add wave -position end  sim:/UIQ_testbench/reg_value_from_FU_in
+add wave -position end  sim:/UIQ_testbench/rs1_out1
+add wave -position end  sim:/UIQ_testbench/rs2_out1
+add wave -position end  sim:/UIQ_testbench/rd_out1
+add wave -position end  sim:/UIQ_testbench/rs1_value_out1
+add wave -position end  sim:/UIQ_testbench/rs2_value_out1
+add wave -position end  sim:/UIQ_testbench/imm_value_out1
+add wave -position end  sim:/UIQ_testbench/fu_number_out1
+add wave -position end  sim:/UIQ_testbench/rs1_out2
+add wave -position end  sim:/UIQ_testbench/rs2_out2
+add wave -position end  sim:/UIQ_testbench/rd_out2
+add wave -position end  sim:/UIQ_testbench/rs1_value_out2
+add wave -position end  sim:/UIQ_testbench/rs2_value_out2
+add wave -position end  sim:/UIQ_testbench/imm_value_out2
+add wave -position end  sim:/UIQ_testbench/fu_number_out2
+add wave -position end  sim:/UIQ_testbench/rs1_out3
+add wave -position end  sim:/UIQ_testbench/rs2_out3
+add wave -position end  sim:/UIQ_testbench/rd_out3
+add wave -position end  sim:/UIQ_testbench/rs1_value_out3
+add wave -position end  sim:/UIQ_testbench/rs2_value_out3
+add wave -position end  sim:/UIQ_testbench/imm_value_out3
+add wave -position end  sim:/UIQ_testbench/fu_number_out3
+add wave -position end  sim:/UIQ_testbench/stall_out
+add wave -position end  sim:/UIQ_testbench/instruction
+run -all
+# ** Note: $stop    : E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v(169)
+#    Time: 50 ns  Iteration: 0  Instance: /UIQ_testbench
+# Break in Module UIQ_testbench at E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v line 169
+add wave -position end  sim:/UIQ_testbench/UIQ_inst/valid
+add wave -position end  sim:/UIQ_testbench/UIQ_inst/operation
+add wave -position end  sim:/UIQ_testbench/UIQ_inst/dest_reg
+add wave -position end  sim:/UIQ_testbench/UIQ_inst/src_reg1
+add wave -position end  sim:/UIQ_testbench/UIQ_inst/src1_data
+add wave -position end  sim:/UIQ_testbench/UIQ_inst/src1_ready
+add wave -position end  sim:/UIQ_testbench/UIQ_inst/src_reg2
+add wave -position end  sim:/UIQ_testbench/UIQ_inst/src2_data
+add wave -position end  sim:/UIQ_testbench/UIQ_inst/src2_ready
+add wave -position end  sim:/UIQ_testbench/UIQ_inst/imm
+add wave -position end  sim:/UIQ_testbench/UIQ_inst/fu_number
+restart -f
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+run -all
+# ** Note: $stop    : E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v(169)
+#    Time: 50 ns  Iteration: 0  Instance: /UIQ_testbench
+# Break in Module UIQ_testbench at E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v line 169
+quit -sim
+# Compile of UIQ_tb.v was successful.
+# Compile of Decoder.v was successful.
+# Compile of UIQ.v was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -novopt work.UIQ_testbench
+# vsim 
+# Start time: 22:45:57 on Nov 14,2024
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/sim_yudong_zhou/work.UIQ_testbench
+# Loading work.UIQ_testbench
+# Refreshing E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/sim_yudong_zhou/work.Unified_Issue_Queue
+# Loading work.Unified_Issue_Queue
+# ** Error: (vsim-3043) E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ.v(231): Unresolved reference to 'break'.
+#    Time: 0 ps  Iteration: 0  Instance: /UIQ_testbench/UIQ_inst File: E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ.v
+# Error loading design
+# Compile of UIQ_tb.v was successful.
+# Compile of Decoder.v was successful.
+# Compile of UIQ.v was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -novopt work.UIQ_testbench
+# vsim 
+# Start time: 22:49:18 on Nov 14,2024
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/sim_yudong_zhou/work.UIQ_testbench
+# Loading work.UIQ_testbench
+# Refreshing E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/sim_yudong_zhou/work.Unified_Issue_Queue
+# Loading work.Unified_Issue_Queue
+add wave -position end  sim:/UIQ_testbench/UIQ_inst/valid
+add wave -position end  sim:/UIQ_testbench/UIQ_inst/operation
+add wave -position end  sim:/UIQ_testbench/UIQ_inst/dest_reg
+add wave -position end  sim:/UIQ_testbench/UIQ_inst/src_reg1
+add wave -position end  sim:/UIQ_testbench/UIQ_inst/src1_data
+add wave -position end  sim:/UIQ_testbench/UIQ_inst/src1_ready
+add wave -position end  sim:/UIQ_testbench/UIQ_inst/src_reg2
+add wave -position end  sim:/UIQ_testbench/UIQ_inst/src2_data
+add wave -position end  sim:/UIQ_testbench/UIQ_inst/src2_ready
+add wave -position end  sim:/UIQ_testbench/UIQ_inst/imm
+add wave -position end  sim:/UIQ_testbench/UIQ_inst/fu_number
+run -all
+# ** Note: $stop    : E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v(169)
+#    Time: 50 ns  Iteration: 0  Instance: /UIQ_testbench
+# Break in Module UIQ_testbench at E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v line 169
+add wave -position end  sim:/UIQ_testbench/ResetValue
+add wave -position end  sim:/UIQ_testbench/HalfCycle
+add wave -position end  sim:/UIQ_testbench/Cycle
+add wave -position end  sim:/UIQ_testbench/RS_SIZE
+add wave -position end  sim:/UIQ_testbench/AR_SIZE
+add wave -position end  sim:/UIQ_testbench/AR_ARRAY
+add wave -position end  sim:/UIQ_testbench/FU_SIZE
+add wave -position end  sim:/UIQ_testbench/FU_ARRAY
+add wave -position end  sim:/UIQ_testbench/clk
+add wave -position end  sim:/UIQ_testbench/rstn
+add wave -position end  sim:/UIQ_testbench/opcode_in
+add wave -position end  sim:/UIQ_testbench/funct3_in
+add wave -position end  sim:/UIQ_testbench/funct7_in
+add wave -position end  sim:/UIQ_testbench/rs1_in
+add wave -position end  sim:/UIQ_testbench/rs1_value_in
+add wave -position end  sim:/UIQ_testbench/rs2_in
+add wave -position end  sim:/UIQ_testbench/rs2_value_in
+add wave -position end  sim:/UIQ_testbench/imm_value_in
+add wave -position end  sim:/UIQ_testbench/rd_in
+add wave -position end  sim:/UIQ_testbench/rs1_ready_from_ROB_in
+add wave -position end  sim:/UIQ_testbench/rs2_ready_from_ROB_in
+add wave -position end  sim:/UIQ_testbench/fu_ready_from_FU_in
+add wave -position end  sim:/UIQ_testbench/reg_tag_from_FU_in
+add wave -position end  sim:/UIQ_testbench/reg_value_from_FU_in
+add wave -position end  sim:/UIQ_testbench/rs1_out1
+add wave -position end  sim:/UIQ_testbench/rs2_out1
+add wave -position end  sim:/UIQ_testbench/rd_out1
+add wave -position end  sim:/UIQ_testbench/rs1_value_out1
+add wave -position end  sim:/UIQ_testbench/rs2_value_out1
+add wave -position end  sim:/UIQ_testbench/imm_value_out1
+add wave -position end  sim:/UIQ_testbench/fu_number_out1
+add wave -position end  sim:/UIQ_testbench/rs1_out2
+add wave -position end  sim:/UIQ_testbench/rs2_out2
+add wave -position end  sim:/UIQ_testbench/rd_out2
+add wave -position end  sim:/UIQ_testbench/rs1_value_out2
+add wave -position end  sim:/UIQ_testbench/rs2_value_out2
+add wave -position end  sim:/UIQ_testbench/imm_value_out2
+add wave -position end  sim:/UIQ_testbench/fu_number_out2
+add wave -position end  sim:/UIQ_testbench/rs1_out3
+add wave -position end  sim:/UIQ_testbench/rs2_out3
+add wave -position end  sim:/UIQ_testbench/rd_out3
+add wave -position end  sim:/UIQ_testbench/rs1_value_out3
+add wave -position end  sim:/UIQ_testbench/rs2_value_out3
+add wave -position end  sim:/UIQ_testbench/imm_value_out3
+add wave -position end  sim:/UIQ_testbench/fu_number_out3
+add wave -position end  sim:/UIQ_testbench/stall_out
+add wave -position end  sim:/UIQ_testbench/instruction
+restart -f
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+run -all
+# ** Note: $stop    : E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v(169)
+#    Time: 50 ns  Iteration: 0  Instance: /UIQ_testbench
+# Break in Module UIQ_testbench at E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v line 169
+quit -sim
+# Compile of UIQ_tb.v was successful.
+# Compile of Decoder.v was successful.
+# Compile of UIQ.v was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -novopt work.UIQ_testbench
+# vsim 
+# Start time: 22:54:27 on Nov 14,2024
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/sim_yudong_zhou/work.UIQ_testbench
+# Loading work.UIQ_testbench
+# Refreshing E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/sim_yudong_zhou/work.Unified_Issue_Queue
+# Loading work.Unified_Issue_Queue
+add wave -position end  sim:/UIQ_testbench/ResetValue
+add wave -position end  sim:/UIQ_testbench/HalfCycle
+add wave -position end  sim:/UIQ_testbench/Cycle
+add wave -position end  sim:/UIQ_testbench/RS_SIZE
+add wave -position end  sim:/UIQ_testbench/AR_SIZE
+add wave -position end  sim:/UIQ_testbench/AR_ARRAY
+add wave -position end  sim:/UIQ_testbench/FU_SIZE
+add wave -position end  sim:/UIQ_testbench/FU_ARRAY
+add wave -position end  sim:/UIQ_testbench/clk
+add wave -position end  sim:/UIQ_testbench/rstn
+add wave -position end  sim:/UIQ_testbench/opcode_in
+add wave -position end  sim:/UIQ_testbench/funct3_in
+add wave -position end  sim:/UIQ_testbench/funct7_in
+add wave -position end  sim:/UIQ_testbench/rs1_in
+add wave -position end  sim:/UIQ_testbench/rs1_value_in
+add wave -position end  sim:/UIQ_testbench/rs2_in
+add wave -position end  sim:/UIQ_testbench/rs2_value_in
+add wave -position end  sim:/UIQ_testbench/imm_value_in
+add wave -position end  sim:/UIQ_testbench/rd_in
+add wave -position end  sim:/UIQ_testbench/rs1_ready_from_ROB_in
+add wave -position end  sim:/UIQ_testbench/rs2_ready_from_ROB_in
+add wave -position end  sim:/UIQ_testbench/fu_ready_from_FU_in
+add wave -position end  sim:/UIQ_testbench/reg_tag_from_FU_in
+add wave -position end  sim:/UIQ_testbench/reg_value_from_FU_in
+add wave -position end  sim:/UIQ_testbench/rs1_out1
+add wave -position end  sim:/UIQ_testbench/rs2_out1
+add wave -position end  sim:/UIQ_testbench/rd_out1
+add wave -position end  sim:/UIQ_testbench/rs1_value_out1
+add wave -position end  sim:/UIQ_testbench/rs2_value_out1
+add wave -position end  sim:/UIQ_testbench/imm_value_out1
+add wave -position end  sim:/UIQ_testbench/fu_number_out1
+add wave -position end  sim:/UIQ_testbench/rs1_out2
+add wave -position end  sim:/UIQ_testbench/rs2_out2
+add wave -position end  sim:/UIQ_testbench/rd_out2
+add wave -position end  sim:/UIQ_testbench/rs1_value_out2
+add wave -position end  sim:/UIQ_testbench/rs2_value_out2
+add wave -position end  sim:/UIQ_testbench/imm_value_out2
+add wave -position end  sim:/UIQ_testbench/fu_number_out2
+add wave -position end  sim:/UIQ_testbench/rs1_out3
+add wave -position end  sim:/UIQ_testbench/rs2_out3
+add wave -position end  sim:/UIQ_testbench/rd_out3
+add wave -position end  sim:/UIQ_testbench/rs1_value_out3
+add wave -position end  sim:/UIQ_testbench/rs2_value_out3
+add wave -position end  sim:/UIQ_testbench/imm_value_out3
+add wave -position end  sim:/UIQ_testbench/fu_number_out3
+add wave -position end  sim:/UIQ_testbench/stall_out
+add wave -position end  sim:/UIQ_testbench/instruction
+run -all
+# ** Note: $stop    : E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v(169)
+#    Time: 50 ns  Iteration: 0  Instance: /UIQ_testbench
+# Break in Module UIQ_testbench at E:/UCLA/Codes/zyd_github/189_OoOcpu_commit/src_yudong_zhou/UIQ_tb.v line 169
+# End time: 22:55:52 on Nov 14,2024, Elapsed time: 0:01:25
+# Errors: 0, Warnings: 1
